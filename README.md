@@ -1,4 +1,4 @@
-# 🧪 ExperimentIQ
+# ExperimentIQ
 ### Agentic RAG-Based ML Experiment Failure Analysis & Optimization Platform
 
 ExperimentIQ is an academic prototype designed to help machine-learning practitioners search, compare, and analyze historical ML experiments. It combines hybrid retrieval, evidence-grounded LLM explanations, experiment-analysis workflows, and a Streamlit dashboard.
@@ -76,51 +76,8 @@ flowchart TD
 | Visualization | Plotly |
 | Data formats | CSV, JSON, NPY |
 
-## Suggested Project Structure
-
-```text
-ExperimentIQ/
-├── app.py
-├── README.md
-├── requirements.txt
-├── .gitignore
-├── Data/
-│   ├── experiment_failure_rag_cleaned.csv
-│   └── experiment_rag_documents.json
-├── notebooks/
-│   └── ExperimentIQ_RAG.ipynb
-└── screenshots/
-    ├── dashboard-overview.png
-    ├── experiments-explorer.png
-    ├── compare-runs.png
-    ├── failure-analysis.png
-    ├── rag-assistant.png
-    └── data-health.png
-```
-
-Adjust this structure to match the files actually included in your repository. Large generated embeddings and local Qdrant storage can usually be regenerated and may be better excluded from Git.
-
 ## Screenshots
 
-Capture genuine screenshots from the running dashboard and place them in `screenshots/`. Remove any image links below for screenshots you have not added yet.
-
-### Dashboard Overview
-![Dashboard overview](screenshots/dashboard-overview.png)
-
-### Experiments Explorer
-![Experiments explorer](screenshots/experiments-explorer.png)
-
-### Compare Runs
-![Compare runs](screenshots/compare-runs.png)
-
-### Failure Analysis
-![Failure analysis](screenshots/failure-analysis.png)
-
-### RAG Assistant
-![RAG assistant](screenshots/rag-assistant.png)
-
-### Data Health
-![Data health](screenshots/data-health.png)
 
 ## Getting Started
 
@@ -130,54 +87,11 @@ Capture genuine screenshots from the running dashboard and place them in `screen
 - A local copy of the experiment history CSV.
 - Groq API key only if you run LLM-powered functionality.
 
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/YOUR-USERNAME/ExperimentIQ-ML-Experiment-Intelligence.git
-cd ExperimentIQ-ML-Experiment-Intelligence
-```
-
-Replace `YOUR-USERNAME` with your GitHub username.
-
-### 2. Create a virtual environment
-
-**Windows Command Prompt:**
-```bat
-python -m venv .venv
-.venv\Scripts\activate
-```
-
-**macOS/Linux:**
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-```
-
-### 3. Install packages
-
-For the Streamlit dashboard:
-
-```bash
-python -m pip install streamlit pandas plotly
-```
-
-For the RAG pipeline, install the packages actually imported by your notebook. Common dependencies include:
-
-```bash
-python -m pip install numpy scikit-learn sentence-transformers qdrant-client rank-bm25 groq langgraph
-```
-
-After testing, record compatible versions in `requirements.txt`.
-
 ### 4. Run the dashboard
 
 ```bash
 python -m streamlit run app.py
 ```
-
-Open the local URL printed in the terminal, usually `http://localhost:8501`.
-
-The dashboard defaults to `C:\Jupyter\ExperimentIQ\Data\experiment_failure_rag_cleaned.csv`. Change the path in the sidebar if your CSV is elsewhere.
 
 ## Configuration and API Security
 
@@ -240,10 +154,7 @@ Clearly label synthetic or demonstration records. Do not present simulated value
 **Shubham Modi**  
 Machine Learning · RAG Systems · AI Agents · Data Science
 
-- GitHub: https://github.com/YOUR-USERNAME
-- LinkedIn: https://www.linkedin.com/in/YOUR-PROFILE/
-
-Replace the links above with your actual profile URLs.
+- LinkedIn: https://www.linkedin.com/in/shubhammodi17/
 
 ---
 **Disclaimer:** ExperimentIQ is an educational/research prototype. Its outputs are decision-support aids, not guarantees of model performance. Verify recommendations with controlled experiments and appropriate evaluation.
